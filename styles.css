@@ -13,6 +13,19 @@ body {
     color: #333;
 }
 
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-red);
+    text-shadow: 
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+    text-align: center;
+}
+
 .full-screen-container {
     margin:0;
     display: flex;
@@ -30,29 +43,18 @@ body {
     border-radius: 20px;
     margin-top: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.food-list-content {
-    display: flex;
+.home-screen {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 90%;
 }
 
-.food-list-heading {
-    font-size: 70px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--color-red);
-    text-shadow: 
-    -2px -2px 0 black,
-     2px -2px 0 black,
-    -2px  2px 0 black,
-     2px  2px 0 black;
-}
 
 .add-food-button {
     padding: 10px 20px;
@@ -67,39 +69,13 @@ body {
     cursor: pointer;
 }
 
-.add-food-form {
+.add-food-screen {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    background-color: var(--color-light-green);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
 }
 
-.add-food-form label {
-    font-weight: bold;
-    font-size: medium;
-    color: black;
-}
-
-.add-food-form input {
-    padding: 8px;
-    border: 1px solid var(--color-medium-green);
-    border-radius: 4px;
-    background-color: var(--color-cream);
-}
-
-.add-food-form button {
-    padding: 10px 20px;
-    background-color: var(--color-dark-green);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.add-food-form button:hover {
-    background-color: var(--color-medium-green);
-    transform: scale(1.03);
+.add-food-form {
+    
 }
