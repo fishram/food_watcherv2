@@ -6,6 +6,7 @@ const addFoodButton = document.querySelector('#add-food-button-id');
 const homeScreen = document.querySelector("#home-screen-id");
 const addFoodScreen = document.querySelector('#add-food-screen-id');
 const locationSelect = document.querySelector('#locations');
+const cancelButton = document.querySelector('#food-screen-cancel-button');
 
 // Location list
 let locationList = ["Fridge", "Freezer", "Pantry"];
@@ -16,6 +17,8 @@ addFoodButton.addEventListener('click', () => {
     homeScreen.style.display = "none";
     addFoodScreen.style.display = "flex";
 });
+
+cancelButton.addEventListener
 
 function addLocations(){
     locationList.forEach((location) => {
