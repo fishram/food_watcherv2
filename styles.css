@@ -14,6 +14,7 @@ body {
 }
 
 h1 {
+    margin: 15px;
     font-size: 70px;
     font-weight: bold;
     text-transform: uppercase;
@@ -26,8 +27,9 @@ h1 {
     text-align: center;
 }
 
+
 .full-screen-container {
-    margin:0;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,18 +39,18 @@ h1 {
 
 .view-box {
     background-color: var(--color-cream);
-    box-shadow: 0 0 0 2px var(--color-dark-green);
     padding: 20px;
     width: 80%;
+    border: 4px solid var(--color-dark-green);
     border-radius: 20px;
-    margin-top: 50px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .home-screen {
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -56,26 +58,62 @@ h1 {
 }
 
 
-.add-food-button {
-    padding: 10px 20px;
-    width: 200px;
+.green-button {
+    padding: 10px 10px;
+    width: 150px;
     background-color: var(--color-medium-green);
-    box-shadow: 0 0 0 2px var(--color-dark-green);
+    box-shadow: 0 0 0 2px black;
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     cursor: pointer;
 }
 
+/* Add Food Screen*/
+
 .add-food-screen {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 20px;
+}
+
+#food-screen-cancel-button {
+    background-color: var(--color-red);
 }
 
 .add-food-form {
-    
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid var(--color-dark-green);
+}
+
+.add-food-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.add-food-form label {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-dark-green);
+}
+
+.locations {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
