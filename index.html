@@ -21,21 +21,25 @@
 
                 <div class="add-food-screen" id="add-food-screen-id">
                     <h1 id="food-screen-heading-id">Add Food!</h1>
-                    <form class="add-food-form">
+                    <form class="add-food-form" id="food-form-id">
                         <label for="foodName">Food Name:</label><br>
-                        <input type="text" id="foodName" name="foodName"><br>
+                        <input type="text" id="foodName" name="foodName" required><br>
                         <label for="location">Location:</label><br>
-                        <select class="locations" id="locations">
-                            <option value="default">Choose a location</option>
+                        <select class="locations" id="locations" required>
+                            
                         </select><br>
                         <label for="quantity">Quantity:</label><br>
-                        <input type="number" id="quantity" name="quantity"><br>
+                        <input type="number" id="quantity" name="quantity" required><br>
                         <label for="expirationDate">Expiration Date:</label><br>
-                        <input type="date" id="expirationDate" name="expirationDate"><br>
+                        <input type="date" id="expirationDate" name="expirationDate" required><br>
                         <button class="defaultButton" id="food-screen-cancel-button">Cancel</button>
                         <button type="submit" class="defaultButton" id="submit-food-button">Submit</button>
                     </form>
                     
+                </div>
+                
+                <div class="food-confirm-screen" id="food-confirm-screen-id">
+                    <h1>Confirm Food</h1>
                 </div>
             </div>
         </div>
