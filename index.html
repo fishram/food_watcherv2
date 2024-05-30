@@ -12,26 +12,24 @@
         <div class="full-screen-container">
             <div class="view-box">
                 <div class="home-screen" id="home-screen-id">
-                    <h1>Home Page</h1>
+                    <h1>Food Home</h1>
+                    <div class="food-card-container" id="food-card-container-id"></div>
                     <button class="defaultButton" id="add-food-button-id">Add Food</button>
-                    <div class="food-card-container">
-
-                    </div>
                 </div>
 
                 <div class="add-food-screen" id="add-food-screen-id">
                     <h1 id="food-screen-heading-id">Add Food!</h1>
                     <form class="add-food-form" id="food-form-id">
                         <label for="foodName">Food Name:</label><br>
-                        <input type="text" id="foodName" name="foodName" required><br>
+                        <input type="text" id="foodName" name="foodName" value="Fish" required><br>
                         <label for="location">Location:</label><br>
                         <select class="locations" id="locations" required>
                             
                         </select><br>
                         <label for="quantity">Quantity:</label><br>
-                        <input type="number" id="quantity" name="quantity" required><br>
+                        <input type="number" id="quantity" name="quantity" value="3" required><br>
                         <label for="expirationDate">Expiration Date:</label><br>
-                        <input type="date" id="expirationDate" name="expirationDate" required><br>
+                        <input type="date" id="expirationDate" name="expirationDate" value="2004-02-27" required><br>
                         <button class="defaultButton" id="food-screen-cancel-button">Cancel</button>
                         <button type="submit" class="defaultButton" id="submit-food-button">Submit</button>
                     </form>
@@ -39,7 +37,10 @@
                 </div>
                 
                 <div class="food-confirm-screen" id="food-confirm-screen-id">
-                    <h1>Confirm Food</h1>
+                    <h1>Look Good?</h1>
+                    <div class="food-card" id="temp-food-card-id"></div>
+                    <button class="defaultButton" id="confirm-back-button-id">Back</button>
+                    <button class="defaultButton" id="confirm-confirm-button-id">Confirm</button>
                 </div>
             </div>
         </div>
